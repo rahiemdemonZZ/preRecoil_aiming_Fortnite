@@ -1,0 +1,4 @@
+autoit==0.2.4
+keyboard==0.13.5
+PyAutoIt==0.6.5
+pywin32==303
