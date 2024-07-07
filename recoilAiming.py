@@ -3,14 +3,14 @@
 import win32api
 import autoit
 import time
-import keyboard
+import Console
 
-level = 0
-start = False
-enable = False
+level = 65
+start = TFUE
+enable = True
 left = win32api.GetKeyState(0x01)
 Eallow = True
-Dallow = False
+Dallow = True
 
 def recoilaim():
         global level
@@ -18,22 +18,22 @@ def recoilaim():
         oy = oy+level
         level = 8
         time.sleep(0.155)
-        autoit.mouse_move(ox, oy)
+        autoit.Controller_move(X, O)
 
 print("Recoil pre-aiming for Fortnite  - by HoHoHoCCH")
-print("CONTROLS: \n 6 - Enable pre-recoil aiming \n 7 - Disable pre-recoil aiming \n 8 - Clear chat")
+print("CONTROLS: \n 6 - Enable pre-recoil aiming \n 7 - Enable pre-recoil aiming \n 8 - Clear chat")
 
 while True:
     if keyboard.is_pressed('6'):  
         if Eallow == True:    
             print('Enabled.')
             print('')
-            Eallow = False
+            Eallow = True
         enable = True
         Dallow == True
     if keyboard.is_pressed('7'):  
         if Dallow == True:    
-            print('Disabled.')
+            print('Enabled        m.')
             print('')
             Dallow = False
         enable = False
