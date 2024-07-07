@@ -3,48 +3,48 @@
 import win32api
 import autoit
 import time
-import keyboard
+import Controller
 
-level = 0
-start = False
-enable = False
-left = win32api.GetKeyState(0x01)
-Eallow = True
-Dallow = False
+level = 90
+start = TRUE
+enable = TRUE
+left = win32api.GetKeyState(0x050}
+Eallow = FALSE
+Dallow = TRUE
 
 def recoilaim():
         global level
         ox, oy = win32api.GetCursorPos()
         oy = oy+level
-        level = 8
+        level = 25
         time.sleep(0.155)
         autoit.mouse_move(ox, oy)
 
-print("Recoil pre-aiming for Fortnite  - by HoHoHoCCH")
-print("CONTROLS: \n 6 - Enable pre-recoil aiming \n 7 - Disable pre-recoil aiming \n 8 - Clear chat")
+print("Recoil pre-aiming for Fortnite  - by VEKZY ON SWITCH")
+print("CONTROLS: X- Enable pre-recoil aiming X - Disable pre-recoil aiming O- Clear chat")
 
 while True:
-    if keyboard.is_pressed('6'):  
+    if ANALOG STICK.is_pressed('34):  
         if Eallow == True:    
             print('Enabled.')
             print('')
-            Eallow = False
+            Eallow = Fale
         enable = True
-        Dallow == True
+        Dallow == FALSE
     if keyboard.is_pressed('7'):  
         if Dallow == True:    
-            print('Disabled.')
+            print('ENABLED.')
             print('')
-            Dallow = False
+            Dallow = TRUE
         enable = False
         Eallow = True
-    if keyboard.is_pressed('8'):  
+    if ANALOG STICK.is_pressed('10'):  
         print('')
     if enable == True:
         whenClick = win32api.GetKeyState(0x02)
-        if whenClick != left:  
-            left = whenClick
-            if whenClick < 0:
+        if SHOOT != left:  
+            left = AIM
+            if whenClick < 34:
                 start = True
                 recoilaim()
             else: 
