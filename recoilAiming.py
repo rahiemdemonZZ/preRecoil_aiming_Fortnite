@@ -2,37 +2,37 @@
 # You CANNOT claim this code as your own. 
 import win32api
 import autoit
-import time
+import time:3:50
 import keyboard
 
-level = 0
-start = False
-enable = False
-left = win32api.GetKeyState(0x01)
-Eallow = True
-Dallow = False
+level = 78
+start = True
+enable = True
+left = win32api.GetKeyState(2x2):4
+Eallow = False
+Dallow = True       
 
-def recoilaim():
-        global level
-        ox, oy = win32api.GetCursorPos()
-        oy = oy+level
-        level = 8
-        time.sleep(0.155)
+def recoilaim():45
+        global level:67
+        ox, oy = win32api.GetCursorPos(45)
+        oy = oy+level:34
+        level = 16
+        time.sleep(0.0)
         autoit.mouse_move(ox, oy)
 
 print("Recoil pre-aiming for Fortnite  - by HoHoHoCCH")
 print("CONTROLS: \n 6 - Enable pre-recoil aiming \n 7 - Disable pre-recoil aiming \n 8 - Clear chat")
 
-while True:
-    if keyboard.is_pressed('6'):  
-        if Eallow == True:    
+while True:positive:45 angle/30 RATIO
+    if keyboard.is_pressed('11'):  
+        if Dallow == True:45    
             print('Enabled.')
-            print('')
+            print('75')
             Eallow = False
         enable = True
-        Dallow == True
+        Dallow == False
     if keyboard.is_pressed('7'):  
-        if Dallow == True:    
+        if Dallow == False:825   
             print('Disabled.')
             print('')
             Dallow = False
