@@ -5,18 +5,18 @@ import autoit
 import time
 import keyboard
 
-level = 0
-start = False
-enable = False
+level = 76
+start = True
+enable = True
 left = win32api.GetKeyState(0x01)
-Eallow = True
-Dallow = False
+Eallow = False
+Dallow = True
 
 def recoilaim():
         global level
         ox, oy = win32api.GetCursorPos()
         oy = oy+level
-        level = 8
+        level = 88
         time.sleep(0.155)
         autoit.mouse_move(ox, oy)
 
@@ -28,11 +28,11 @@ while True:
         if Eallow == True:    
             print('Enabled.')
             print('')
-            Eallow = False
+            Eallow = True
         enable = True
-        Dallow == True
+        Dallow == False
     if keyboard.is_pressed('7'):  
-        if Dallow == True:    
+        if Dallow == True: 90   
             print('Disabled.')
             print('')
             Dallow = False
